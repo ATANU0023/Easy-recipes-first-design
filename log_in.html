@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        body{ 
+           background:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("font ata.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+           
+        }
+        .login-form{
+            width: 350px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            color: #fff;
+        }
+        .login-form h1{
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+        .login-form p{
+            font-size: 20px;
+            margin: 15px 0;
+            color: rgb(243, 114, 15);
+        }
+        .login-form input{
+            font-size: 16px;
+            width: 100%;
+            padding: 15px 10px;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.6);
+            color: rgb(93, 237, 253);
+        }
+        .login-form button{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 10px 15px;
+            width: 50%;
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.6);
+            color: rgb(76, 181, 247);
+        }
+    </style>
+</head>
+<body >
+    <div class="login-form">
+        <h1>Login </h1>
+        <form action="#" method="post">
+            <p>User name</p>
+            <input type="text" name="user"  placeholder="User Name">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+</body>
+</html>

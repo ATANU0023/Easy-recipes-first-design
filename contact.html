@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+        integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
+    <style>
+        /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wgth@200;300;400;500;600;700;800;900&display=swap');*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("blue.jpg");
+            background-size: cover;
+        }
+
+        .contact .content {
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: rgb(240, 132, 74);
+        }
+
+        .contact .content p {
+            font-weight: 300;
+            color: rgb(111, 236, 53);
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+        }
+
+        .container .contactinfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container .contactinfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+
+        }
+
+        .container .contactinfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .contactinfo .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #fff;
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .container .contactinfo .box .text h3 {
+            font-weight: 500;
+            color: #00bcd4;
+        }
+
+        .contactform {
+
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+
+        }
+
+        .contactform h2 {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contactform .inputbox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contactform .inputbox input,
+        .contactform .inputbox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid#333;
+            outline: none;
+        }
+
+        .contactform .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5%;
+            color: #666;
+        }
+
+        .contactform .inputbox input:focus~span,
+        .contactform .inputbox input:valid~span,
+        .contactform .inputbox textarea:focus~span,
+        .contactform .inputbox textarea:valid~span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        .contactform .inputbox input[type="submit"] {
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+
+        }
+
+        @media (max-width:991px) {
+            .contact {
+                padding: 50px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container .contactinfo {
+                margin-bottom: 40px;
+            }
+
+            .container .contactinfo {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque numquam obcaecati aliquid explicabo
+                qui unde repellat possimus, voluptatibus est repellendus animi quae laudantium sunt amet vero blanditiis
+                expedita minus sint quasi. Maxime cumque laboriosam incidunt natus repellat quasi sed, labore pariatur
+                non, ducimus aperiam eveniet.</p>
+
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"> &#xf3c5;</div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>102 MG Road
+                            <br>kolkata</br>700001
+                        </p>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon"> &#x260E;</div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>507-475-6094
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon"> &#x2709;</div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>wow_easy_recipe@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="contactform">
+                    <form action="">
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required="required"></textarea>
+                            <span>Type Your Message...</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" value="send">
+                            <span>Type Your Message...</span>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

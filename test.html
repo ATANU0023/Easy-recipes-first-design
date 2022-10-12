@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        /*set the height of the body and document to 100%*/
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*style tab link*/
+        .tablink {
+            background-color: aqua;
+            color: white;
+            float: left;
+            border: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+
+        .tablink :hover {
+            background-color: rgb(206, 226, 24);
+        }
+
+        .tacbcontant {
+            color: white;
+            display: none;
+            padding: 100px 200px;
+            height: 100%;
+        }
+
+        #Home {
+            background-color: red;
+        }
+
+        #New {
+            background-color: rgb(0, 55, 255);
+        }
+
+        #About {
+            background-color: rgb(0, 255, 30);
+        }
+
+        #Contact {
+            background-color: rgb(255, 0, 38);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="tablink" oneclick="openpage('home',this,'red')">Home</button>
+    <button class="tablink" oneclick="openpage('new',this,blue)" id="defautlopen">New</button>
+    <button class="tablink" oneclick="openpage('about',this,'green')">About</button>
+    <button class="tablink" oneclick="openpage('contact',this,'yellow')">Contact</button>
+
+    <div id="home" class="tabcontact"><h3>Home</h3>
+        <div class="item">
+            <img src="biriyani.jpg" alt="">
+            <h4>Biriyani</h4>
+            <button>Show more</button>
+        </div>
+        <div class="item">
+            <img src="prawn.jpeg" alt="">
+            <h4>Prawn Curry</h4>
+            <button>Show more</button>
+        </div>
+        <div class="item">
+            <img src="fried rece.jpg" alt="">
+            <h4>Fried Rice</h4>
+            <button>Show more</button>
+        </div>
+        <div class="item">
+            <img src="tarka.jpg" alt="">
+            <h4>Egg Tarka</h4>
+            <button>Show more</button>
+        </div>
+        <div class="item">
+            <img src="Chole Bhature.jpg" alt="">
+            <h4>Chole Bhature</h4>
+            <button>Show more</button>
+        </div>
+    </div>
+</body>
+
+</html>
